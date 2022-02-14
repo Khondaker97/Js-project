@@ -1,0 +1,92 @@
+* {
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #121213;
+  height: 100vh;
+}
+.content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  width: 510px;
+  border-bottom: 1px solid #3a3a3c;
+}
+
+.message {
+  height: 30px;
+  margin: 4px;
+}
+.message p {
+  background-color: #818384;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0;
+}
+
+.tiles {
+  width: 300px;
+  margin: 20px 0;
+}
+.keyboard {
+  width: 510px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.keyboard button {
+  width: 42px;
+  height: 58px;
+  border-radius: 4px;
+  border: none;
+  background-color: #818384;
+  color: #ffffff;
+  margin: 4px;
+}
+
+.keyboard button:nth-child(11) {
+  margin-left: 30px;
+}
+
+.keyboard button:nth-child(20),
+.keyboard button:nth-child(28) {
+  width: 70px;
+}
+.tiles div {
+  display: flex;
+}
+
+.tiles .tile {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #3a3a3c;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.tile.flip {
+  animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
