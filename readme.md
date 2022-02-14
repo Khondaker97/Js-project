@@ -1,4 +1,6 @@
-#JavaScript_100_Project
+# JavaScript_100_Project
 
-1. Wordle
-2. Random Quote API
+Check the branches.
+
+      1. Wordle
+      2. Random Quote API
