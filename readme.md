@@ -4,3 +4,4 @@ Check the branches.
 
       1. Wordle
       2. Random Quote API
+      3.Modal
